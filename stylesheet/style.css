@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #14131a;
+  color: white;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main {
+  display: grid;
+  grid-template-areas:
+    "navBar navBar"
+    "sideBar contentPart";
+  overflow: hidden;
+}
+
+.nav {
+  grid-area: navBar;
+  background-color: #14131a;
+  height: 8vh;
+}
+
+.navContainer{
+    height: 100%;
+    width: 100%;
+    background-color: #14131a;
+    display:flex;
+    justify-content:space-between ;
+    align-items: center;
+    flex-direction: row;
+}
+.contactBtn{
+    background-color: transparent;
+}
+button{
+    background-color: #13a359;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.elem{
+    height: 100%;
+    background: transparent;
+    width: fit-content;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.circle{
+    height: 30%;
+    aspect-ratio: 1/1;
+    background-color: #13a359;
+    border-radius: 50%;
+}
+
+.sidebar {
+  grid-area: sideBar;
+  background-color: #1c1b23;
+  width: 280px;
+  height: 85vh;
+  margin: 20px 0 0 20px;
+  border-radius: 12px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content {
+  grid-area: contentPart;
+  height: 82vh;
+  /* border: 1px solid rgb(255, 212, 212); */
+  width: 75vw !important;
+  overflow-y: scroll;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.test {
+  padding-top: 20px;
+  height: 2000px;
+  width: 100%;
+  overflow-y: hidden;
+  color: white;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.part1 {
+  height: 45%;
+  width: 95%;
+  background-color: #1c1b23;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  font-size: small;
+}
+.part2 {
+  height: 45%;
+  width: 95%;
+  background-color: #1c1b23;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  font-size: small;
+}
+
+.sidebar a {
+  font: 1.2em sans-serif;
+  background-color: #1c1b23;
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #7a7980;
+}
+.sidebar a:hover {
+  top: 10px;
+}
+.sidebar p {
+  text-align: left;
+}
+
+svg {
+  background-color: #1c1b23;
+  stroke: white;
+}
+
+.coverContainer {
+  background: url("../assets/Cover.jpeg");
+  width: 100%;
+  height: 10%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.imgContainer {
+    height: 100%;
+  width: fit-content;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgContainer img{
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.nameContainer {
+  width: fit-content;
+  background: transparent;
+  font-size: small;
+}
+h1,
+p {
+  background: transparent;
+}
+
+
+
+.aboutContainer{
+
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+
+}
+
+.aboutContainer h1{
+    color: yellow;
+    margin-top:1px ;
+    font-size: 3rem;
+}
+
+.details{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card1 img{
+    width: 10%;
+}
+.card1 h4{
+    color: black;
+    background-color: white;
+}
+.card1 p{
+    color: black;
+    background-color: white;
+}
+
+.detailText{
+    width: 80%;
+    margin-top: 50px;
+}
+.detailText p{
+    margin-top: 20px;
+}
+
+
+.projectSection{
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.projectSection h1{
+    color: yellow;
+    margin-top:1px ;
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+
+
+
+.skillSection{
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.skillSection h1{
+    margin-top:1px ;
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+
+.allCardsContainerSkill{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.skillCard{
+    width: 20%;
+    aspect-ratio: 3/4;
+    padding: 20px;
+    border: 1px solid white;
+}
+.skillCard ul{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+}
+.skillCard ul li{
+
+    border: 1px solid green;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+
+
+.last{
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+}
