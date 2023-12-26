@@ -17,6 +17,7 @@ html{
     "navBar navBar"
     "sideBar contentPart";
   overflow: hidden;
+  z-index: 0;
 }
 
 .nav {
@@ -75,6 +76,7 @@ button{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 }
 .content {
   grid-area: contentPart;
@@ -305,10 +307,100 @@ p {
     border-radius: 5px;
 }
 
-
+.mobile{
+  display: none;
+}
 
 .last{
     margin-top: 150px;
     width: 100%;
     text-align: center;
+}
+
+
+@media (max-width:800px) {
+  .main {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+  }
+  .sidebar{
+    display: none;
+  }
+  .content{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    z-index: 100;
+  }
+  .test{
+    height: 3000px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .coverContainer {
+    background: url("../assets/Cover.jpeg");
+    width: 100%;
+    height: 8%;
+  }
+  .nav{
+    width: 100vw;
+  }
+  .overlay{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nameContainer{
+    text-align: end;
+  }
+  .imgContainer img{
+    height: 55%;
+  }
+  .details{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card1{
+    width: 60vw;
+    border-radius: 10px;
+  }
+  .allCardsContainerSkill{
+    flex-direction: column;
+    align-items:start;
+    gap: 50px;
+  }
+
+  .skillCard{
+    width: 90%;
+    aspect-ratio: 16/9;
+  }
+
+  .mobile{
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .part2mobile{
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .last{
+    margin-top: 40px;
+  }
 }
